@@ -1,0 +1,11 @@
+reason_code,reason_description
+R01,Not my account
+R02,Incorrect balance
+R03,Incorrect payment history
+R04,Account status incorrect (open/closed)
+R05,Duplicate account reported
+R06,Incorrect date opened
+R07,Paid in full but showing balance due
+R08,Suspected identity theft / fraud
+R09,Incorrect credit limit / high balance
+R10,Account should be removed after bankruptcy discharge

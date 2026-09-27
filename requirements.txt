@@ -1,0 +1,6 @@
+pandas>=2.0
+faker>=20.0
+streamlit>=1.35
+seaborn>=0.13
+matplotlib>=3.8
+scikit-learn>=1.4

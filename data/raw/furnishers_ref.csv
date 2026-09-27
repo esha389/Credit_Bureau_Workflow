@@ -1,0 +1,31 @@
+furnisher_id,furnisher_name,furnisher_type,quality_tier
+F001,"Rodriguez, Figueroa and Sanchez Collections",Collections Agency,good
+F002,Doyle Ltd Collections,Collections Agency,average
+F003,"Mcclain, Miller and Henderson Bank",Bank,average
+F004,Davis and Sons Bank,Bank,poor
+F005,"Guzman, Hoffman and Baldwin Collections",Collections Agency,average
+F006,"Gardner, Robinson and Lawrence Credit",Credit Union,good
+F007,Blake and Sons Credit,Credit Union,good
+F008,"Henderson, Ramirez and Lewis Auto",Auto Lender,good
+F009,Garcia-James Bank,Bank,good
+F010,Abbott-Munoz Retail,Retail Card,average
+F011,Blair PLC Retail,Retail Card,poor
+F012,Dudley Group Auto,Auto Lender,good
+F013,Arnold Ltd Bank,Bank,good
+F014,"Mcclure, Ward and Lee Bank",Bank,average
+F015,Williams and Sons Retail,Retail Card,average
+F016,Galloway-Wyatt Collections,Collections Agency,good
+F017,James Group Collections,Collections Agency,average
+F018,"Flowers, Martin and Kelly Bank",Bank,good
+F019,"Adams, Zuniga and Wong Auto",Auto Lender,poor
+F020,"Reid, Ferguson and Sanchez Bank",Bank,poor
+F021,Gray-Mayo Collections,Collections Agency,good
+F022,"Watts, Robinson and Nguyen Bank",Bank,average
+F023,Perez Inc Credit,Credit Union,good
+F024,Morales-Jones Auto,Auto Lender,good
+F025,"Walter, Edwards and Rios Bank",Bank,good
+F026,Wilkerson-Day Collections,Collections Agency,good
+F027,Baker and Sons Retail,Retail Card,average
+F028,"Hoffman, Baker and Richards Auto",Auto Lender,average
+F029,"Ross, Robinson and Bright Collections",Collections Agency,average
+F030,"Snyder, Campos and Callahan Collections",Collections Agency,good
