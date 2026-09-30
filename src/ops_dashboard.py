@@ -54,9 +54,9 @@ def kpi_row():
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("Latest eval accuracy", f"{latest['overall_accuracy']*100:.1f}%" if latest is not None else "—")
-    c2.metric("Escalation rate", f"{escalation*100:.1f}%" if escalation is not None else "—")
-    c3.metric("Avg. agent latency", f"{latency:.2f} ms" if latency is not None else "—")
-    c4.metric("Simulated cost so far", f"${total_cost:.4f}" if total_cost is not None else "—")
+    c2.metric("Escalation rate", f"{escalation*100:.1f}%" if pd.notna(escalation) else "—")
+    c3.metric("Avg. agent latency", f"{latency:.2f} ms" if pd.notna(latency) else "—")
+    c4.metric("Simulated cost so far", f"${total_cost:.4f}" if pd.notna(total_cost) else "—")
 
 
 def alerts():
@@ -105,6 +105,9 @@ def accuracy_trend():
 
 def confidence_distribution():
     df = load("SELECT confidence, policy_action FROM agent_review_queue")
+    if df.empty:
+        st.info("No triaged disputes yet — run `generate_incoming_disputes.py` then `run_intake.py`.")
+        return
     fig, ax = plt.subplots(figsize=(6, 3.5))
     sns.histplot(data=df, x="confidence", hue="policy_action", bins=20, ax=ax, multiple="stack")
     ax.set_title("Classifier confidence distribution")
