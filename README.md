@@ -1,8 +1,20 @@
-# BureauFlow — Phase 1: Synthetic Data + ETL + SQL Schema
+# BureauFlow
 
-A synthetic credit-dispute data platform demonstrating end-to-end data
-engineering: messy raw data → validated star schema → SQL analytics-ready
-tables. Built on public FCRA/credit-reporting domain concepts. **All data is
+**An end-to-end synthetic credit-dispute platform — data engineering, SQL
+analytics, an agentic triage layer, and AI Ops monitoring, all built on one
+shared database.**
+
+![BureauFlow architecture](docs/architecture.svg)
+
+## Results
+
+- **5,296** clean records loaded from **6,124** raw rows — the rest rejected with a logged reason for each, nothing silently dropped
+- **93.3%** dispute-classification accuracy on the agent's evaluation set — 96.5% on the items it auto-routed vs. 83.3% on the ones it escalated to a human, which is exactly the split a well-calibrated policy engine should produce
+- **4 phases, one database**: ETL → SQL/dashboard analytics → human-in-the-loop agent → AI Ops monitoring
+
+**Built with:** Python · pandas · SQLite · Streamlit · scikit-learn · seaborn/matplotlib
+
+Built on public FCRA/credit-reporting domain concepts. **All data is
 synthetic — no real consumer or employer data is used anywhere in this repo.**
 
 ## Why this project
